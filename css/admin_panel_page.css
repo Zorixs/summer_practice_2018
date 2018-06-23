@@ -1,0 +1,39 @@
+﻿
+/*Товары*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.flex-item {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    opacity: 1;
+    height: 15em;
+    width: 12em;
+    margin: 10px;
+}
+
+    .flex-item a {
+        color: gray;
+    }
+
+.icon {
+    align-items: center;
+    max-height: 10em;
+    max-width: 12em;
+    background-color: white;
+}
+
+
+.color1 {
+    background-color: #e4e4e4;
+}

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>OnlineStore_Practice</title>
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/default.css" rel="stylesheet" />
+    <link href="../css/authorization.css" rel="stylesheet" />
+    <link href="../css/profile.css" rel="stylesheet" />
+    <link href="../css/products.css" rel="stylesheet" />
+    <link href="../css/product.css" rel="stylesheet" />
+    <link href="../css/order.css" rel="stylesheet" />
+    <style>
+        .container_profile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: #546e7a;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .profile_info .purchase_info {
+            width: 50%;
+            height: 100%;
+        }
+
+        .purchase_info h1 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Заголовок-->
+    <header>
+        <h1 class="site_name">Garden Furniture in Ukraine</h1>
+        <div id="authentefication">
+            <a href="http://google.com">User</a>
+            <div id="profile_icon"></div>
+        </div>
+    </header>
+
+    <!--Меню-->
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Товары</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="about.html">О нас</a></li>
+        </ul>
+        <form id="search">
+            <input type="text" name="searchText" placeholder="Поиск товаров" />
+            <button type="submit" name="searchButton">Искать</button>
+        </form>
+    </div>
+
+    <!--Корзина и История покупок-->
+
+    <main>
+        <div class="container_profile">
+            <h1>Профиль</h1>
+            <div class="container">
+                <div class="profile_info">
+                    <img src="https://c8.alamy.com/comp/DAA13C/vector-businessman-avatar-in-circle-frame-abstract-concept-DAA13C.jpg" width="400" />
+                    <p>Фамилия Имя</p>
+                    <p>email</p>
+                    <p>Количество покупок</p>
+                </div>
+                <div class="purchase_info">
+                    <div>
+                        <h1>Корзина</h1>
+                        <form>
+                            <button type="submit">Купить все</button>
+                            <button type="submit">Очистить корзину</button>
+                        </form>
+
+                        <div class="flex-container row">
+                            <div class="flex-item color1">
+                                <img class="product_image" src="../images/bica_atlantide_white_14_images_1553920362.jpg" /><br>
+                                <a class="product_name" href="http://google.com">Название товара1</a>
+                                <div class="product_description">Описание товара</div>
+                                <div class="product_price">
+                                    <span class="price">100$</span>
+                                    <form action="/php/filter.php">
+                                        <button type="submit" class="product_buy">Купить</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="flex-item color1">
+                                <img class="product_image" src="../images/bica_atlantide_white_14_images_1553920362.jpg" /><br>
+                                <a class="product_name" href="http://google.com">Название товара1</a>
+                                <div class="product_description">Описание товара</div>
+                                <div class="product_price">
+                                    <span class="price">100$</span>
+                                    <form action="/php/filter.php">
+                                        <button type="submit" class="product_buy">Купить</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="flex-item color1">
+                                <img class="product_image" src="../images/bica_atlantide_white_14_images_1553920362.jpg" /><br>
+                                <a class="product_name" href="http://google.com">Название товара1</a>
+                                <div class="product_description">Описание товара</div>
+                                <div class="product_price">
+                                    <span class="price">100$</span>
+                                    <form action="/php/filter.php">
+                                        <button type="submit" class="product_buy">Купить</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="flex-item color1">
+                                <img class="product_image" src="../images/bica_atlantide_white_14_images_1553920362.jpg" /><br>
+                                <a class="product_name" href="http://google.com">Название товара1</a>
+                                <div class="product_description">Описание товара</div>
+                                <div class="product_price">
+                                    <span class="price">100$</span>
+                                    <form action="/php/filter.php">
+                                        <button type="submit" class="product_buy">Купить</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="flex-item color1">
+                                <img class="product_image" src="../images/bica_atlantide_white_14_images_1553920362.jpg" /><br>
+                                <a class="product_name" href="http://google.com">Название товара1</a>
+                                <div class="product_description">Описание товара</div>
+                                <div class="product_price">
+                                    <span class="price">100$</span>
+                                    <form action="/php/filter.php">
+                                        <button type="submit" class="product_buy">Купить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1>История покупок</h1>
+                        <div class="flex-container row">
+                            <div class="flex-item color1">
+                                <img class="product_image" src="../images/bica_atlantide_white_14_images_1553920362.jpg" /><br>
+                                <a class="product_name" href="http://google.com">Название товара1</a>
+                                <div class="product_description">Описание товара</div>
+                                <div class="product_price">
+                                    <span class="price">100$</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-item color1">
+                                <img class="product_image" src="../images/bica_atlantide_white_14_images_1553920362.jpg" /><br>
+                                <a class="product_name" href="http://google.com">Название товара1</a>
+                                <div class="product_description">Описание товара</div>
+                                <div class="product_price">
+                                    <span class="price">100$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy;2018</p>
+    </footer>
+</body>
+</html>
