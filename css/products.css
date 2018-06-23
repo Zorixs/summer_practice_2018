@@ -1,0 +1,37 @@
+﻿
+/*Товары*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    flex-direction: row;
+    margin: 0;
+}
+
+h1.category_name {
+    text-align:left;
+    font-size: 2em;
+    margin-bottom: 0.1em;
+}
+
+.color1 {
+    background-color: #e4e4e4;
+}
+
+.color2 {
+    background-color: #9BC850;
+}
+
+.color3 {
+    background-color: #A62E5C;
+}
+
+.color4 {
+    background-color: #2A9FBC;
+}
+
+.color5 {
+    background-color: #F15B2A;
+}

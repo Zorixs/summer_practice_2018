@@ -1,0 +1,17 @@
+﻿
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup {
+    display: inline-block;
+    background-color: gray;
+    padding: 2em;
+}
+
+    #signup input {
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
