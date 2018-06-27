@@ -11,43 +11,20 @@
     <link href="../css/order.css" rel="stylesheet" />
 </head>
 <body>
+	<?php require('page_parts/header.php') ?>
 
-    <!--Заголовок-->
-    <header>
-        <h1 class="site_name">Garden Furniture in Ukraine</h1>
-        <div id="authentefication">
-            <a href="http://google.com">User</a>
-            <div id="profile_icon"></div>
-        </div>
-    </header>
-
-    <!--Меню-->
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="about.html">О нас</a></li>
-        </ul>
-        <form id="search">
-            <input type="text" name="searchText" placeholder="Поиск товаров" />
-            <button type="submit" name="searchButton">Искать</button>
-        </form>
-    </div>
-
-    <!--Форма для регистрации-->
-
+    <!--Форма для оформления покупки-->
     <main>
-        <div class="container">
-            <h1>Оформление заказа</h1>
-            <form >
+        <article >
+            <form method="get" action="../scripts/processing_user_info.php">
                 <div class="input">
                     <h1>Информация</h1>
                     <h3>Им'я, Отчество</h3>
                     <input type="text" name="name" />
                     <h3>Email</h3>
-                    <input type="email" name="name" />
+                    <input type="email" name="email" />
                     <h3>Телефон</h3>
-                    <input type="tel" name="name" />
+                    <input type="tel" name="phone" />
                 </div>
 
                 <div class="input">
@@ -60,20 +37,15 @@
                     <input type="text" name="address" />
                     <h1>Доставка и оплата</h1>
                     <h3>Выберите удобный способ доставки для данного заказа</h3>
-                    <input type="radio" /><span>Доставка с фиксированой стоимостю заказа</span>
+                    <input type="radio" name="delivery_type" value="fix_price" /><span>Доставка с фиксированой стоимостю заказа</span>
                     <h3>Выберите способ оплаты для данного заказа</h3>
-                    <input type="radio" /><span>Оплата при доставке</span>
+                    <input type="radio" name="payment_type" value="upon_get" /><span>Оплата при доставке</span>
+               		<button type="submit" id="issue" name="p_id"  value="<?php echo $_GET['buy'].'_'.$_COOKIE['user_id'] ?>">Оформить</button>
                 </div>
-                <button type="submit" name="issue" id="issue">Оформить</button>
             </form>
-
-
-        </div>
+        </article>
     </main>
 
-    <!--Footer-->
-    <footer>
-        <p>&copy;2018</p>
-    </footer>
+    <?php require('page_parts/footer.php') ?>    
 </body>
 </html>
